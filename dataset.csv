@@ -1,1 +1,7 @@
-
+claim,code,label
+"deletes files","os.remove(path)","MATCH"
+"deletes files","open(path,'w').write('')","LIE"
+"calculates absolute value","return abs(x)","MATCH"
+"calculates absolute value","return x * -1","LIE"
+"reverses a list","items.reverse()","MATCH"
+"reverses a list","items.sort()","LIE"
